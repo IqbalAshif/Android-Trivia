@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Transoholic</string>
+    <string name="about">About Me</string>
+    <string name="stats">Statstics</string>
+    <string name="developer_details">My name is Ashif Iqbal and I am a second year student at Metropolia Ammattikorkeakoulu</string>
+    <string name="developer">Ashif Iqbal</string>
+    <string name="greeting">Welcome. Press Dictionary to study or Lets play to play </string>
+    <string name="play">Lets play</string>
+    <string name="hint">Name</string>
+    <string name="submit">Submit</string>
+    <string name="home_question">Transoholic (%1$d/%2$d)</string>
+    <string name="wrong_answer">Wrong answer. Study more and click the button to try again</string>
+    <string name="try_again">Try again</string>
+    <string name="play_more">Play again</string>
+    <string name="words">Words</string>
+    <string name="congrats">You have answered all right. Keep rolling :)</string>
+    <string name="dictionary">Learn words</string>
+
+</resources>

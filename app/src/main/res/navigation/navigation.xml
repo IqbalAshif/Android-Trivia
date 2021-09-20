@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_navigation"
+    app:startDestination="@+id/homeFragment">>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.transoholic.HomeFragment"
+        android:label="Transoholic"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_to_quiz"
+            app:destination="@id/quizFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_wordFragment"
+            app:destination="@id/wordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/developerFragment"
+        android:name="com.example.transoholic.DeveloperFragment"
+        android:label="Transoholic"
+        tools:layout="@layout/developer_fragment"/>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.example.transoholic.QuizFragment"
+        android:label="Transoholic"
+        tools:layout="@layout/fragment_quiz" >
+        <action
+            android:id="@+id/quiz_to_wrong"
+            app:destination="@id/wrongFragment" />
+        <action
+            android:id="@+id/quiz_to_right"
+            app:destination="@id/rightFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wrongFragment"
+        android:name="com.example.transoholic.WrongFragment"
+        android:label="Transoholic"
+        tools:layout="@layout/fragment_wrong" >
+        <action
+            android:id="@+id/wrong_to_quiz"
+            app:destination="@id/quizFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rightFragment"
+        android:name="com.example.transoholic.RightFragment"
+        android:label="Transoholic"
+        tools:layout="@layout/fragment_right">
+        <action
+            android:id="@+id/right_to_quiz"
+            app:destination="@id/quizFragment" />
+        <argument
+            android:name="numQuestions"
+            app:argType="integer" />
+        <argument
+            android:name="numCorrect"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordFragment"
+        android:name="com.example.transoholic.WordFragment"
+        android:label="Transoholic"
+        tools:layout="@layout/word_fragment" />
+</navigation>
